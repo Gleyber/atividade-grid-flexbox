@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Atividade Flexbox</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		.col,[class*="col-"] {
+			/*background-color: #f4f4f4;*/
+			/*border: 1px solid #ccc;*/
+		}
+
+		li.brand, li.item {
+  			list-style: none;
+  			display: inline;
+  			color: #000;
+  			/*background: orange;*/
+  			float: left; 
+  		}
+
+		li a:hover {
+  			color: orange;
+  			background: #000; 
+  		}
+
+		#meunavbar {
+  			background: orange;
+  			display: table;
+  			width: 100%; 
+  		}
+
+		li a {
+  			text-decoration: none; 
+  		}
+
+		li.brand {
+  			font: 15px verdana, arial, tahoma, sans-serif;
+  			padding: 5px 10px;
+  			margin-left: 5px;
+  			margin-right: 25px; 
+  		}
+
+		li.item {
+  			font: 16px verdana, arial, tahoma, sans-serif;
+  			padding: 5px 10px;
+  			margin-left: 1px; 
+  		}
+  		.rodape {
+  			font: 10px verdana, arial, tahoma, sans-serif;
+  			padding: 5px 10px;
+  			margin-left: 1px; 
+  		}
+	</style>
+
+</head>
+<body>
+		<br>
+		<div class="container">
+				<div class="row d-flex justify-content-between" style="height: 100px">
+					<div class="col-3 align-left"><img src="Logo.JPG" width="100%" alt=""></div>
+					<div class="col-8 align-right">
+						<li class="item"><a href="#">Home</a></li>
+                        <li class="item"><a href="#">Quem Somos</a></li>
+                        <li class="item"><a href="#">Nossa Família</a></li>
+                        <li class="item"><a href="#">Entre em Contato</a></li>
+					</div>
+				</div>
+
+				<br>
+				<div class="row d-flex justify-content-between" style="height: 300px">
+					<div class="col-3">
+						<h4>Férias em São Luiz</h4>
+						<br><br><br>
+						Saiba como foi nossas férias de 2016 em nossa viagem à São Luis. Nossos intercalços e paradas em São Paulo e Brasília!
+					</div>
+					<div class="col-3">
+						<h4>Viagem à Pelotas</h4>
+						<br><br><br>
+						Em um feriadão, aproveitamos para dar um pulo em Pelotas e visitar minha irmã e seu cunhado. Mas vou lhe contar: que lugar frio!! Brrrrrrr!!!
+					</div>
+					<div class="col-3">
+						<h4>Compras no Uruguai</h4>
+						<br><br><br>
+						A ciudad del Rio Branco é bem próxima a Pelotas - menos de duas horas de viagem. Lá existem vários free shoppings mas é melhor ler nossos conselhos antes de se arriscar a ir lá.
+					</div>
+				</div>
+
+				<br>
+				<div class="row d-flex justify-content-between" style="height: 100px">
+					<div class="col-12">
+						<div class="d-flex justify-content-between">
+							<img src="logo.gif"  alt="">
+							<li class="item d-flex align-items-center"><a href="#">Saiba Mais</a></li>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<div class="row d-flex justify-content-between" style="height: 150px">
+					<div class="rodape col-12 d-flex align-items-center justify-content-center">
+							Designed by <a href="http://www.gleyber.com.br">Gleyber</a> | Powered by  Bootstrap | Apenas mais uma atividade do curso de bootstrap
+					</div>
+				</div>
+		</div>
+</body>
+</html>
